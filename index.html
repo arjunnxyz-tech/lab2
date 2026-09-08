@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f6;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      margin: 0;
+    }
+
+    .product-card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      max-width: 600px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .product-header {
+      background-color: #1a252f;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-header h2 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .product-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .product-table th,
+    .product-table td {
+      padding: 14px 20px;
+      border-bottom: 1px solid #eef2f5;
+      font-size: 0.95rem;
+    }
+
+    .product-table th {
+      background-color: #f8fafc;
+      color: #4a5568;
+      font-weight: 600;
+      width: 35%;
+    }
+
+    .product-table td {
+      color: #2d3748;
+    }
+
+    .product-table tr:last-child th,
+    .product-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #2b6cb0;
+    }
+
+    .badge-in-stock {
+      display: inline-block;
+      background-color: #c6f6d5;
+      color: #22543d;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-card">
+    <div class="product-header">
+      <h2>Product Specifications</h2>
+    </div>
+
+    <table class="product-table">
+      <tbody>
+        <tr>
+          <th>Product Name</th>
+          <td>Wireless Noise-Canceling Headphones</td>
+        </tr>
+        <tr>
+          <th>Brand</th>
+          <td>SoundPro</td>
+        </tr>
+        <tr>
+          <th>Model</th>
+          <td>WH-1000XM-X</td>
+        </tr>
+        <tr>
+          <th>Price</th>
+          <td class="price">rs.3000</td>
+        </tr>
+        <tr>
+          <th>Availability</th>
+          <td><span class="badge-in-stock">In Stock</span></td>
+        </tr>
+        <tr>
+          <th>Color Options</th>
+          <td>Matte Black, Silver, Navy Blue</td>
+        </tr>
+        <tr>
+          <th>Battery Life</th>
+          <td>Up to 30 Hours</td>
+        </tr>
+        <tr>
+          <th>Warranty</th>
+          <td>2-Year Manufacturer Warranty</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
